@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script type="text/javascript">
+	function clickme()
+	{
+		var user = document.getElementById("username");
+		var msg="hello!"
+		if(user==undefined || user==null)
+			return;
+		msg=user.value + msg;
+		alert(msg);
+	}
+</script>
+</head>
+
+<body>
+     <div style="width:400px; height:300px">
+	 <div>
+        <label>请输入您的名字:</label>
+	    <input id="username"type="text"/>
+	</div>
+	
+	<div >
+		<input type="button" value="确定" style="margin-left:300px;" onclick="clickme()"/>
+	</div>
+		
+	</div>
+
+</body>
+</html>
